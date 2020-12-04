@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Sign_In from "./Sign_In";
 import Home_Page from "./Home_Page";
+import Admin from "./admin";
 import "./App.css";
 import React from "react";
 import Sidebar from "./Sidebar";
@@ -26,13 +27,18 @@ function App() {
 
             <Route path="/Home_Page" component={Cards}></Route>
           </Route>
+          <Route path="/admin">
+            <Admin/>
+          </Route>
           <Route path="/">
             <Sign_In />
           </Route>
+          
 
           <Route exact path="/login">
             <Home_Page />
           </Route>
+          
         </Switch>
       </div>
     </Router>
