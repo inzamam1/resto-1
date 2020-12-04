@@ -139,7 +139,13 @@ function App() {
         </div>
       </Modal>
 
-      {user ? (user.email==='a@g.com'?(<Redirect to="/admin"/>):(<Redirect to="/Home_Page"/>)): (
+      {user ? (
+        user.email === "a@g.com" ? (
+          <Redirect to="/admin" />
+        ) : (
+          <Redirect to="/Home_Page" />
+        )
+      ) : (
         <div>
           <Button onClick={() => setOpen(true)}>SignUp</Button>
           <Button onClick={() => setOpenSignin(true)}>Login</Button>

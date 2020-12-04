@@ -28,17 +28,15 @@ function App() {
             <Route path="/Home_Page" component={Cards}></Route>
           </Route>
           <Route path="/admin">
-            <Admin/>
+            <Admin />
           </Route>
           <Route path="/">
             <Sign_In />
           </Route>
-          
 
           <Route exact path="/login">
             <Home_Page />
           </Route>
-          
         </Switch>
       </div>
     </Router>
