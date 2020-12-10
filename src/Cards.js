@@ -33,7 +33,7 @@ function Cards(){
       },
       {
         title: "Table 7",
-        text: "hello there",
+        text: "hello table 7",
       },
       {
         title: "Table 8",
