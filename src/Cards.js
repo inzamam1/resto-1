@@ -37,7 +37,7 @@ function Cards(){
       },
       {
         title: "Table 8",
-        text: "hello there",
+        text: "hello there table 8",
       },
     ];
   
