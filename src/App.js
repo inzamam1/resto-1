@@ -29,7 +29,7 @@ function App() {
             <Admin />
           </Route>
           <Route >
-       <Link to='/Home_Page'>hey</Link>    
+       <Link to='/Home_Page'>hey what is your name</Link>    
           </Route>
 
           <Route exact path="/login">
