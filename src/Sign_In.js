@@ -146,7 +146,8 @@ function App() {
           <Redirect to="/Home_Page" />
         )
       ) : (
-        <div>
+        <div className="test">
+          <h1>heyy</h1>
           <Button onClick={() => setOpen(true)}>SignUp</Button>
           <Button onClick={() => setOpenSignin(true)}>Login</Button>
         </div>
