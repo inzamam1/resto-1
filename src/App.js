@@ -1,14 +1,12 @@
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route,Link } from "react-router-dom";
 import Sign_In from "./Sign_In";
 import Home_Page from "./Home_Page";
 import Admin from "./admin";
 import "./App.css";
 import React from "react";
 import Sidebar from "./Sidebar";
-import { Card } from "react-bootstrap";
 import Cards from "./Cards";
-import firebase from "firebase";
-import { db } from "./firebase";
+
 
 function App() {
   return (
@@ -30,8 +28,8 @@ function App() {
           <Route path="/admin">
             <Admin />
           </Route>
-          <Route path="/">
-            <Sign_In />
+          <Route >
+       <Link to='/Home_Page'>hey</Link>    
           </Route>
 
           <Route exact path="/login">
